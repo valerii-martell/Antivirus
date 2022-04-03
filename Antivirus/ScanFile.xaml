@@ -1,0 +1,21 @@
+﻿<Window x:Class="Antivirus.ScanFile"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Antivirus"
+        mc:Ignorable="d"
+        Title="Сканирование файла" Height="220" Width="532.167">
+    <Grid>
+        <StackPanel x:Name="panelChoose" Visibility="Visible">
+            <Label x:Name="label" Content="Выберите файл для сканирования" HorizontalContentAlignment="Center" Margin="10,10,10,0" VerticalAlignment="Top"/>
+            <Grid>
+                <Button x:Name="buttonChoose" Content="..." Margin="0,10,10,0" VerticalAlignment="Top" Click="buttonChoose_Click" Height="23" HorizontalAlignment="Right" Width="17"/>
+                <TextBox x:Name="textBoxPath" Height="23" Margin="10,10,27,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            </Grid>
+            <CheckBox x:Name="checkBoxAllowSignatures" Content="Разрешить приложению доступ к внешней базе вирусных сигнатур &#xA;(требуется интернет соединение)" Margin="10,10,10,0" VerticalAlignment="Top" Height="38"/>
+            <CheckBox x:Name="checkBoxAllowHash" Content="Включить проверку хеш-сумм" Margin="10,0" VerticalAlignment="Top" Height="18"/>
+            <Button x:Name="buttonScan" Content="Начать сканироване" Margin="10,10,10,0" VerticalAlignment="Top" Click="buttonScan_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

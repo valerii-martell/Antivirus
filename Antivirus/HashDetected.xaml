@@ -1,0 +1,21 @@
+﻿<Window x:Class="Antivirus.HashDetected"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Antivirus"
+        mc:Ignorable="d"
+        Title="Обнаружена угроза!" Height="391.833" Width="324.5">
+    <StackPanel>
+        <Label x:Name="label" Content="Обнаружено несовпадение контрольных сумм:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="296"/>
+        <ScrollViewer Margin="15,10,10,0" Height="120" VerticalAlignment="Top">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="auto" Width="auto"/>
+        </ScrollViewer>
+        <Label x:Name="label_Copy" Content="Выберите действие:" HorizontalAlignment="Center" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonKill" Content="Удалить файл и завершить его процессы" Margin="10,10,10,0" VerticalAlignment="Top" Click="buttonKill_Click"/>
+        <Button x:Name="buttonTrust" Content="Добавить в исключения" Margin="10,10,10,0" VerticalAlignment="Top" Click="buttonTrust_Click"/>
+        <Button x:Name="buttonSkip" Content="Пропустить" Margin="10,10,10,0" VerticalAlignment="Top" Click="buttonSkip_Click"/>
+        <Button x:Name="buttonUpdate" Content="Обновить контрольную сумму этого файла" Margin="10,10,10,0" VerticalAlignment="Top" Click="buttonUpdate_Click"/>
+        <Button x:Name="buttonAbort" Content="Завершить сканирование" Margin="10,10,10,0" VerticalAlignment="Top" Click="buttonAbort_Click"/>
+    </StackPanel>
+</Window>
