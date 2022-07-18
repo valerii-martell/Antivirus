@@ -1,5 +1,7 @@
 # Antivirus
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/86ddaf08a15848239723f978644d8e7a)](https://www.codacy.com/gh/valerii-martell/Antivirus/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=valerii-martell/Antivirus&amp;utm_campaign=Badge_Grade)
+
 Antivirus model developed by me during my internship at the Institute of Computer Technology
 
 Detects in real-time malware such as virus signatures, code caves, and system DLL spoofing. 
